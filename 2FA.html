@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/sub_pag/style .css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="icon/icone_telecall.ico" type="image/x-icon">
+    <title> 2FA - CPaaS Telecall </title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="CpaaS.html">
+            <img src="IMG/logo_Telecall.png" alt="Logo">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span><i class="bi bi-person-circle"></i></span>
+              </button>
+              <div class="dropdown-menu" >
+                Usuário:
+                  <script>
+                    document.write(localStorage.getItem("login"));
+                  </script>
+                    <div class="dropdown-divider"></div>
+                <button onclick="logOut()" class="btn btn-danger" id="btn_logout">Sair</button>
+              </div>
+            </div>
+          </nav>
+            <div id="home">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="main-title">Two-Factor Authentication</h3>
+                  </div>
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="tela_Principal/img/autenticacao-de-dois-fatores-via-app-no-celular.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="about-title">Autenticação de dois fatores</h3>
+                    <P>O 2FA é um procedimento de segurança que garante que serão
+                      necessários 2 fatores únicos para liberação de uma ação. O
+                      primeiro fator é a senha que o usuário e o segundo pode ser
+                      autenticado via token, via detecção de impressão digital,
+                      reconhecimento facial, código enviado via sms, entre outros.</P>
+                      <h6>O 2FA permite que você:</h6>
+                      <ul id="about-list">
+                        <li>Envie uma senha via SMS, voz ou e-mail para autenticação do usuário.</li>
+                        <li>Adicione uma camada extra de segurança além da senha pessoal.</li>
+                        <li>Ofereça maior segurança para usuários.</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <hr>
+            <div id="funcionalidade-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="main-title">Como funciona?</h3>
+                  </div>
+                  <div class="col-md-3 funcao-box">
+                    <h4>Primeiro Passo:</h4>
+                    <p>Usuário acessa seu site o
+                      aplicativo e digita a senha
+                      cadastrada para entrar em
+                      seu perfil ou completar uma
+                      transação.</p>
+                  </div>
+                  <div class="col-md-3 funcao-box">
+                    <h4>Segundo Passo:</h4>
+                    <p>A Telecall recebe a tentativa
+                      de login e solicita que o
+                      usuário insira seu número de
+                      telefone para autorizar o
+                      acesso.</p>
+                  </div>
+                  <div class="col-md-3 funcao-box">
+                    <h4>Terceiro Passo:</h4>
+                    <p>Após inserir seu número, a
+                      Telecall envia para o usuário
+                      por SMS, chamada ou e-mail
+                      um código PIN de uso único.</p>
+                  </div>
+                  <div class="col-md-3 funcao-box">
+                    <h4>Último Passo:</h4>
+                    <p>O usuário insere o código no
+                      site ou aplicativo para
+                      concluir o processo de
+                      verificação.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div id="beneficio-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="main-title">Benefícios</h3>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="about-title">Seus benefícios incluem:</h3>
+                      <ul id="about-list">
+                        <li>Ofereça segurança aprimorada para seus clientes.</li>
+                        <li>Reduza casos de fraude e invasões e evite o acesso a dados por invasores.</li>
+                        <li>Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail.</li>
+                        <li>Flexibilidade de canais garante que o usuário conseguirá completar a tarefa desejada
+                          mesmo quando tiver problema com um deles. Exemplo: Enviar OTP por SMS, em caso de
+                          falha, enviar OTP por chamada de voz, em caso de outra falha, enviar por e-mail.</li>
+                        <li>API simples e de rápida implementação.</li>
+                        <li>Plataforma intuitiva que permite visualizar relatórios de uso por dia, mês ou ano e
+                          pesquisar usando diversos critérios de filtro.</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <hr>
+            <div id="utilizacao-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="main-title">Utilidade</h3>
+                  </div>
+                  <div class="col-md-3 utili-box">
+                    <h4>Finanças</h4>
+                    <ul id="about-list">
+                      <li>Acesso ao portal/app</li>
+                      <li>Autenticação para transações bancárias</li>
+                      <li>Pagamentos Online (PicPay, PayPal)</li>
+                      <li>Digital Wallets (Google Pay, Apple Pay, Samsung Pay)</li>
+                      <li>API simples e de rápida implementação.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 utili-box">
+                    <h4>Saúde</h4>
+                    <ul id="about-list">
+                      <li>Acesso ao portal/app</li>
+                      <li>Agendamentos</li>
+                      <li>Tokens de autorização</li>
+                      <li>Digital Wallets (Google Pay, Apple Pay, Samsung Pay)</li>
+                      <li>Telemedicina</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 utili-box">
+                    <h4>Turismo</h4>
+                    <li>Acesso ao portal/app</li>
+                    <li>Gestão de Reservas</li>
+                    <li>Acesso ao histórico</li>
+                    <li>Salvar dados de pagamentos</li>
+                    <li>Recuperação de Senha</li>
+                  </div>
+                  <div class="col-md-3 utili-box">
+                    <h4>Varejo</h4>
+                    <li>Acesso ao portal/app</li>
+                    <li>Recibo Eletrônico</li>
+                    <li>Acesso ao histórico</li>
+                    <li>Salvar dados de pagamentos</li>
+                    <li>Recuperação de Senha</li>
+                  </div>
+                  <div class="col-md-3 utili-box">
+                    <h4>Governo</h4>
+                    <li>Acesso ao portal/app</li>
+                    <li>Gestão de informações</li>
+                    <li>Agendamentos</li>
+                    <li>Recuperação de Senha</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+  <footer class="bg-primary py-5 mt-5">
+    <div class="container text-center text-light">
+      <a class="navbar-brand" href="CpaaS.html">
+        <img src="IMG/logo_Telecall.png" alt="Logo">
+        </a>
+      <p class="display-5 mb-3">CPaaS(Communications Platform as a Service).</p>
+    </div>
+  </footer>
+
+
+
+
+        <script src="js/sub_pag/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

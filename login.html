@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/login_pag/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="icon/icone_telecall.ico" type="image/x-icon">
+    <title>CPaas - Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-brand">
+            <img src="IMG/logo_Telecall.png" alt="Logo">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h1>Faça o Login para acessar o Portal CPaaS</h1>
+            <hr>
+            <h2>Dados de Login:</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="login">Login</label>
+                    <input type="text" class="form-control" id="login" name="login" placeholder="Digite o seu login">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a sua senha">
+                </div>
+                <div class="text-center">
+                    <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn" >Entrar</button>
+                    <button type="reset" class="btn btn-danger" id="limpar_btn" >Limpar</button>
+                    <br><br><a href="cadastro.html">Não possui cadastro? Clique aqui</a>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="js/login_pag/script.js"></script>
+</body>
+</html>

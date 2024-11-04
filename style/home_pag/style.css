@@ -1,0 +1,42 @@
+
+
+label{
+    color: #2FADE3;
+    font-family: "Poppins", Sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.card-deck{
+    text-align: center;
+}
+
+.card-img-top{
+    width: 3rem;
+ 
+    
+}
+p{
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 500;
+}
+h3{
+    text-align: center;
+    font-size: 45px;
+    color: #2FADE3;
+    font-family: "Poppins", Sans-serif;
+}
+h2{
+    text-align: center;
+    color: #2FADE3;
+    font-family: "Poppins", Sans-serif;
+}
+.dropdown-menu{
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+}

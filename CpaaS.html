@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/home_pag/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="icon/icone_telecall.ico" type="image/x-icon">
+    <title>CPaaS - Telecall</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+          <img src="IMG/logo_Telecall.png" alt="Logo">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span><i class="bi bi-person-circle"></i></span>
+        </button>
+        <div class="dropdown-menu" >
+          Usuário:
+            <script>
+              document.write(localStorage.getItem("login"));
+            </script>
+              <div class="dropdown-divider"></div>
+          <button onclick="logOut()" class="btn btn-danger" id="btn_logout">Sair</button>
+        </div>
+      </div>
+    </nav>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+          <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <img src="IMG/logo_Telecall.png"><br>
+            <label>CPaaS Plataforma</label>
+            <p class="lead font-weight-normal">Descubra a solução de CPaaS da Modavo. Uma solução completa para integrar canais de comunicação empresarial, como SMS, autenticação de dois fatores, números máscara, transcrição de áudio e muito mais. Experimente agora!</p> 
+          </div>
+          <div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+        <h3>Conheça nossas Soluções</h3><br>
+        <p><strong>Potencialize suas estratégias de comunicação com nossas soluções inovadoras</strong> </p>
+        <div class="card-deck">
+            <div class="card ">
+              <div class="card-body">
+                <h5 class="card-title"><a href="2FA.html">2FA</a></h5>
+                <p class="card-text">Fortaleça a estratégia de segurança do seu negócio com autenticação de dois fatores avançada.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="2FA.html" class="btn btn-primary">2FA</a></small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><a href="numero_mascara.html">Número Máscara</a></h5>
+                <p class="card-text">Ofereça aos seus clientes a capacidade de fazer chamadas e enviar mensagens sem expor seus números de telefone pessoais.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="numero_mascara.html" class="btn btn-primary">Número Máscara</a></small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><a href="google_cerified_calls.html">Google Verified Calls</a></h5>
+                <p class="card-text">Esse novo recurso do Google, exclusivo para
+                  telefones Android, permite que empresas exibam
+                  para o cliente na hora da chamada sua marca,
+                  logotipo e até mesmo o motivo da chamada.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="google_cerified_calls.html" class="btn btn-primary">Google Verified Calls</a></small>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="sms_programavel.html">SMS Programável</a></h5>
+                  <p class="card-text">Impulsione suas campanhas com nosso serviço de envio de SMS em massa.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><a href="sms_programavel.html" class="btn btn-primary">SMS Programável</a></small>
+                </div>
+              </div>
+          </div>
+
+
+
+          <footer class="bg-primary py-5 mt-5">
+            <div class="container text-center text-light">
+              <a class="navbar-brand" href="CpaaS.html">
+                <img src="IMG/logo_Telecall.png" alt="Logo">
+                </a>
+              <p class="display-5 mb-3">CPaaS(Communications Platform as a Service).</p>
+            </div>
+          </footer>     
+    <script src="js/home_pag/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
